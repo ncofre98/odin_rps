@@ -1,17 +1,17 @@
-const choices = ['rock', 'paper', 'scissors'];
+const CHOICES = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
 
 function getComputerChoice() {
-    const random = Math.floor(Math.random() * choices.length);
+    const random = Math.floor(Math.random() * CHOICES.length);
 
-    return choices[random];
+    return CHOICES[random];
 }
 
 function getHumanChoice() {
     const choice = prompt("What's your choice? 1.Rock 2.Paper 3.Scissors");
 
-    return choices[choice - 1];
+    return CHOICES[choice - 1];
 }
 
 // 0 for rock, 1 for paper, 2 for scissors
