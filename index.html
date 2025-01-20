@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="title">Rock, Paper, Scissors Game</h1>
+        <p>Player Score: <span id="playerScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>
+        <p>Rounds: <span id="nRounds">0</span>/5</p>
+        <p id="instructionTxt">Click the choice to play a round! Game ends after 5 rounds</p>
+        <button class="btn">Rock</button>
+        <button class="btn">Paper</button>
+        <button class="btn">Scissors</button>
+        <p id="results"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
